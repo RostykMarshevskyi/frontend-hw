@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Юля</td>
+            <td>Миськів</td>
+            <td>+380677390839</td>
+            <td>juliamyskiv@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Олександр</td>
+            <td>Яринич</td>
+            <td>+380677390340</td>
+            <td>sashayarynych@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Антон</td>
+            <td>Птушкин</td>
+            <td>+380677390841</td>
+            <td>antonptyshkin@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Олексій</td>
+            <td>Кінаш</td>
+            <td>+380677390842</td>
+            <td>kinash@gmail.com</td>
+        </tr>
+    </table>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <div class="name">
+        <label for="first_name">First name:</label><br>
+        <input tabindex="1" placeholder="Enter your first name" type="text" id="first_name" name="first_name" value=""><br>
+        <label for="last_name">Last name:</label><br>
+        <input tabindex="2" placeholder="Enter your last name" type="text" id="last_name" name="last_name" value=""><br><br>
+        </div>
+        <div class="gender">
+            <p>Select a gender</p>
+            <input checked type="radio" value="woman" name="gender" id="woman"><label for="woman">Woman</label><br>
+            <input type="radio" value="man" name="gender" id="man"><label for="man">Man</label>
+        </div>
+        <div>
+            <textarea name="Question" cols ="30" rows="5" placeholder="Additional informations"></textarea>
+            </div>
+            <p>Your city</p>
+        <select>
+            <option name="city" value="select" selected disabled>Choose a city</option>
+            <option name="city" value="Kyiv">Київ</option>
+            <option name="city" value="Kharkiv">Харків</option>
+            <option name="city" value="Odesa">Одеса</option>
+            <option name="city" value="Ternopil">Тернопіль</option>
+            <option name="city" value="Lviv">Львів</option>
+            <option name="city" value="Other">Інше місто</option>
+        </select>
+        <p>Мова</p>
+        <input type="checkbox" id="ua"> <label for="ua">Українська</label>
+        <br>
+        <input type="checkbox" id="ru"> <label for="ru">Русский</label> 
+        <br>
+        <input type="checkbox" id="en"> <label for="en">English</label> 
+        <br>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
